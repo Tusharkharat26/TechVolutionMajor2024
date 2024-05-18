@@ -1,0 +1,48 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.navbar .navbar-brand {
+  color: #007bff;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #007bff;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('path_to_your_hero_image.jpg');
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  padding: 20px 0;
+}
+img {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Add more styles as needed */
