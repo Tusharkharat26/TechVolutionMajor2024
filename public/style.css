@@ -22,14 +22,16 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #007bff;
+  color: #000;
 }
 
 /* Hero Section Styles */
 .hero {
-  background-image: url('path_to_your_hero_image.jpg');
+  background-image: url('/assets/images/bg_image.png');
   background-size: cover;
-  color: white;
+  color: black;
+  background-color: #007bff;
+  text-align: center;
   padding: 100px 0;
 }
 
@@ -189,9 +191,8 @@ img {
 }
 
 .features-section .card-body {
+  height: 160px;
   padding: 15px;
-  background-color: #333;
-  color: #fff;
 }
 
 .features-section .card-title {
@@ -490,5 +491,89 @@ img {
 @media (max-width: 768px) {
   .timeline-section .card {
       margin-bottom: 20px;
+  }
+}
+
+
+/*prize section style
+/* Prizes Section Styling */
+.prizes-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.prizes-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.prizes-section .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+.prizes-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.prizes-section .text-center {
+  color: #007bff;
+}
+
+.prizes-section .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.prizes-section .card-body {
+  height: 155px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0; /* New style */
+}
+
+.prizes-section .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.prizes-section .card-text {
+  font-size: 16px;
+  color: #666;
+}
+
+/* New styles for colorful look */
+.prizes-section .card:nth-child(odd) .card-body {
+  background-color: #ffe6e6; /* Light red for odd cards */
+}
+
+.prizes-section .card:nth-child(even) .card-body {
+  background-color: #e6ffe6; /* Light green for even cards */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .prizes-section h2 {
+      font-size: 28px;
+  }
+
+  .prizes-section .card-title {
+      font-size: 20px;
+  }
+
+  .prizes-section .card-text {
+      font-size: 14px;
   }
 }
